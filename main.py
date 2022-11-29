@@ -5,10 +5,6 @@ from time import time
 
 
 class MaskDetection:
-    """
-    Class implements Yolo model to make inferences on a Youtube video using Opencv2.
-    """
-
     def __init__(self, capture_index, model_name):
         """
         :param capture_index: index value 0 for WebCam, or pass a video file
@@ -23,7 +19,7 @@ class MaskDetection:
 
     def get_video_capture(self):
         """
-        Creates a new video streaming boject to extract video frame by frame to make prediction on.
+        Creates a new video streaming oject to extract video frame by frame to make prediction on.
         :return: Opencv2 video capure object
         """
         return cv2.VideoCapture(self.capture_index)
