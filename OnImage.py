@@ -100,7 +100,7 @@ class MaskDetection:
                 bgr = (0,255,0)
                 cv2.rectangle(frame, (x1,y1), (x2,y2), bgr, 2)
                 cv2.putText(frame, self.class_to_label(labels[i]), (x1,y1), cv2.FONT_HERSHEY_SIMPLEX, 0.5, bgr)
-                cv2.putText(frame, str(np.round(float(row[4]), 2)), (x1+120,y1), cv2.FONT_HERSHEY_SIMPLEX, 0.4, bgr)
+                cv2.putText(frame, str(np.round(float(row[4]), 2)), (x1+80,y1), cv2.FONT_HERSHEY_SIMPLEX, 0.4, bgr)
 
 
                 #Save result in coco format for evaluate mAP
